@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {HeroType} from "../app/components/super-heroes-page";
+import {HeroType} from "../app/components/Super-heroes.page";
 import {FriendType} from "../app/components/ParallelQueries.page";
 
 const instance = axios.create({

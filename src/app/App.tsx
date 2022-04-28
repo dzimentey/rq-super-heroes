@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 import {Link, Route, Routes} from "react-router-dom";
-import {HomePage} from "./components/home-page";
-import {SuperHeroesPage} from "./components/super-heroes-page";
-import {RqSuperHeroesPage} from "./components/RQ-super-heroes-page";
+import {HomePage} from "./components/Home.page";
+import {RQSuperHeroesPage} from "./components/RQ-super-heroes.page";
 import {ReactQueryDevtools} from "react-query/devtools"
 import {RqSuperHeroPage} from "./components/RQSuperHero.page";
 import {ParallelQueriesPage} from "./components/ParallelQueries.page";
+import {SuperHeroesPage} from "./components/Super-heroes.page";
 
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
                     <Route path={'/rq-parallel'} element={<ParallelQueriesPage/>}/>
                     <Route path={`/rq-super-heroes/:heroId`} element={<RqSuperHeroPage/>}/>
                     <Route path={'/super-heroes'} element={<SuperHeroesPage/>}/>
-                    <Route path={'/rq-super-heroes'} element={<RqSuperHeroesPage/>}/>
+                    <Route path={'/rq-super-heroes'} element={<RQSuperHeroesPage/>}/>
                 </Routes>
                 <ReactQueryDevtools initialIsOpen={false} position={'bottom-right'}/>
             </div>
