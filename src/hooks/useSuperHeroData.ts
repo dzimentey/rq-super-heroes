@@ -1,6 +1,6 @@
 import {useQuery, UseQueryResult} from "react-query";
 import {API} from "../api/api";
-import {HeroType} from "../app/components/super-heroes-page";
+import {HeroType} from "../app/components/Super-heroes.page";
 import {AxiosError, AxiosResponse} from "axios";
 
 

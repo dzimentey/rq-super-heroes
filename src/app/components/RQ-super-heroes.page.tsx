@@ -1,10 +1,10 @@
 import React from 'react';
-import {HeroType} from "./super-heroes-page";
+import {HeroType} from "./Super-heroes.page";
 import {AxiosError} from "axios";
 import {useSuperHeroesData} from "../../hooks/useSuperHeroesData";
 import {Link} from "react-router-dom";
 
-export const RqSuperHeroesPage = () => {
+export const RQSuperHeroesPage = () => {
 
     const onSuccess = (heroes: HeroType[]) => {
         console.log('Perform side effect after data fetching')

@@ -2,7 +2,7 @@ import React from 'react';
 import {useQuery, UseQueryResult} from "react-query";
 import {API} from "../api/api";
 import {AxiosError, AxiosResponse} from "axios";
-import {HeroType} from "../app/components/super-heroes-page";
+import {HeroType} from "../app/components/Super-heroes.page";
 
 
 export const useSuperHeroesData = (onSuccess: any, onError: any): UseQueryResult<HeroType[], AxiosError> => {
